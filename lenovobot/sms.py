@@ -12,7 +12,7 @@ def send(message):
     usersettings = open("user.txt", "r")
     data = usersettings.readlines()
     to_number = data[0] + carriers[data[1].replace('\n', '')]
-    auth = ('autonoreply10@gmail.com', 'popguy21')
+    auth = ('YOUREMAIL', 'PASSWORD')
 
     # Establish a secure session with gmail's outgoing SMTP server using your gmail account
     server = smtplib.SMTP("smtp.gmail.com", 587)
